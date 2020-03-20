@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Weather App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div id="content" align="center">
+    <h2>Welcome to Weather App</h2>
+</div>
+
+
+<div class="row center">
+    <div class="para col-lg-6 one" align="center">
+        <div class="card">
+            <div class="card-header">
+                Search Location to view Weather
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Enter city name</h5>
+                <form action="#">
+                    <input type="text" placeholder="Name" name="username" [(ngModel)]="location" />
+                </form>
+                <div class="button">
+                    <button class="btn btn-primary" (click)="findLocation()">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

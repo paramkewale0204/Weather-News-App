@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">API</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div id="content" align="center">
+    <h2>Dashboard</h2>
+</div>
+
+<div class="row">
+    <div class="para col-lg-6 one" align="center">
+        <div class="card">
+            <div class="card-header">
+                Weather
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Go to Weather API</h5>
+                <button class="btn btn-primary" [routerLink]="['/weather']">Weather API</button>
+            </div>
+        </div>
+    </div>
+    <div class="para col-lg-6 one" align="center">
+        <div class="card">
+            <div class="card-header">
+                News
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Go to News API</h5>
+                <button class="btn btn-primary" [routerLink]="['/news']">News API</button>
+            </div>
+        </div>
+    </div>
+</div>
